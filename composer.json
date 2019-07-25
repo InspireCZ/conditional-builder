@@ -1,0 +1,24 @@
+{
+    "type": "library",
+    "name": "inspirecz/conditional-builder",
+    "description": "INSPIRE Conditional builder",
+    "license": "MIT",
+    "keywords": [
+        "php"
+    ],
+    "authors": [
+        {
+            "name": "INSPIRE CZ s.r.o.",
+            "email": "support@inspire.cz",
+            "homepage": "https://www.inspire.cz/"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Inspire\\ConditionalBuilder\\": "src"
+        }
+    }
+}
