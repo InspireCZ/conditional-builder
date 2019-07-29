@@ -3,6 +3,8 @@
     "name": "inspirecz/conditional-builder",
     "description": "INSPIRE Conditional builder",
     "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "keywords": [
         "php"
     ],
@@ -16,9 +18,22 @@
     "require": {
         "php": ">=7.2"
     },
+    "require-dev": {
+        "inspirecz/coding-standard": "^1.0",
+        "nette/tester": "^2.2"
+    },
     "autoload": {
         "psr-4": {
             "Inspire\\ConditionalBuilder\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Inspire\\ConditionalBuilder\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "cs": "phpcs --standard=vendor/inspirecz/coding-standard/ruleset.strict.xml --extensions=php,phpt --tab-width=4 -sp src tests",
+        "cs-fix": "phpcbf --standard=vendor/inspirecz/coding-standard/ruleset.strict.xml --extensions=php,phpt --tab-width=4 -sp src tests"
     }
 }
